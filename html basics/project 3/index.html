@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        td,
+        th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        td {      
+            text-align: center;
+        }
+
+        .table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        .content {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <table class="table" width="50%">
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">topic</th>
+            </tr>
+            <tr>
+                <th>begin</th>
+                <th>end</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8.00 a.m.</td>
+                <td rowspan="2">5.00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>validity and Relax ng</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">tuesday</td>
+                <td>11.00 a.m</td>
+                <td>2.00 p.m</td>
+                <td rowspan="2" style="height: 38px;">Xpath</td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">8.00 a.m.</td>
+                <td rowspan="2">11.00 a.m</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">XSL transformations</td>
+            </tr>
+
+            <tr>
+                <td>2.00 p.m</td>
+                <td>5.00 p.m</td>
+            </tr>
+
+            <tr>
+                <td>wednesday</td>
+                <td>8.00 a.m.</td>
+                <td>5.00 p.m</td>
+                <td>XSL formatting objects</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
