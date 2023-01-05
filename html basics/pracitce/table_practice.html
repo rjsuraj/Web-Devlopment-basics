@@ -6,38 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table</title>
     <style>
-        table,tr,td {
-            border: 1px solid black;
+        .table2,tr,td,th{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .table2{
+            width: 90%;
+        }
+        td:nth-child(6),th:nth-child(6){
+            background-color: #f1c679;
+        }
+        tr:nth-child(1),th:nth-child(1),th:nth-child(2),th:nth-child(4),th:nth-child(7),th:nth-child(8){
+            border: 2px solid grey;
             border-collapse: collapse;
         }
-        .table{
-            width: 50%;
+        td:nth-child(2),td:nth-child(4),td:nth-child(7),td:nth-child(8){
+            border: 2px solid grey;
+            border-collapse: collapse;
+        }
+        tr:nth-child(1) th:nth-child(6){
+            border-top: 3px solid darkmagenta;
+            border-left: 3px solid darkmagenta;
+            border-right: 3px solid darkmagenta;
+            border-bottom: 2px solid #f1c679;
+        }
+        tr:nth-child(1) th:nth-child(3){
+           border-bottom: 1px solid #cef78f !important;
+        }
+        tr:nth-child(1) th:nth-child(5){
+            border-bottom: 2px solid #cef78f;
         }
     </style>
 </head>
 <body>
-    <table class="table">
+
+    <h1>School Time Table</h1>
+    <table  class="table2">
+        <colgroup>
+            <col span="1">
+            <col span="1">
+            <col span="1" style="background-color: #cef78f;">
+            <col span="1">
+            <col span="1" style="background-color: #cef78f;">
+        </colgroup>
         <tr>
-            <td colspan="3"> <strong>2022</strong></td>
+            <td></td>
+            <th>mon</th>
+            <th>tue</th>
+            <th>wed</th>
+            <th>thu</th>
+            <th>fri</th>
+            <th>sat</th>
+            <th>sun</th>
         </tr>
         <tr>
-            <td>&nbsp</td>
-            <td>&nbsp</td>
-            <td>&nbsp</td>
+            <th>1st period</th>
+            <td>English</td>
+            <td></td>
+            <td>German</td>
+            <td></td>
+            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td rowspan="2" colspan="2">sam</td>
-            <td>&nbsp</td>
+            <th>2nd period</th>
+            <td>English</td>
+            <td>English</td>
+            <td>German</td>
+            <td></td>
+            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>&nbsp</td>
+            <th>3rd period</th>
+            <td></td>
+            <td>German</td>
+            <td>German</td>
+            <td></td>
+            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>&nbsp</td>
-            <td>&nbsp</td>
-            <td>&nbsp</td>
+            <th>4th period</th>
+            <td></td>
+            <td style="border-bottom: 2px solid grey;">English</td>
+            <td>English</td>
+            <td style="border-bottom: 2px solid grey;"></td>
+            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta; border-bottom: 3px solid darkmagenta;">Dutch</td>
+            <td></td>
+            <td></td>
         </tr>
-        
     </table>
 </body>
 </html>
