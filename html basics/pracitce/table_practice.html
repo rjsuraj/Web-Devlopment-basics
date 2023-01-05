@@ -6,56 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table</title>
     <style>
-        .table2,tr,td,th{
+        table,tr,td,th{
             border-collapse: collapse;
             text-align: center;
         }
-        .table2{
+        table{
             width: 90%;
         }
-        td:nth-child(6),th:nth-child(6){
+        td:nth-child(1),td:nth-child(2),td:nth-child(4),td:nth-child(7),td:nth-child(8){
+            border: 2px solid grey;
+        }
+        th:nth-child(1),th:nth-child(2),th:nth-child(4),th:nth-child(7),th:nth-child(8){
+            border: 2px solid grey;
+        }
+        th:nth-child(3),th:nth-child(5){
+            background-color: #cef78f;
+        }
+        td:nth-child(3),td:nth-child(5){
+            background-color: #cef78f;
+        }
+        th:nth-child(6){
             background-color: #f1c679;
         }
-        tr:nth-child(1),th:nth-child(1),th:nth-child(2),th:nth-child(4),th:nth-child(7),th:nth-child(8){
-            border: 2px solid grey;
-            border-collapse: collapse;
+        td:nth-child(6){
+            background-color: #f1c679;
         }
-        td:nth-child(2),td:nth-child(4),td:nth-child(7),td:nth-child(8){
-            border: 2px solid grey;
-            border-collapse: collapse;
+        td:nth-child(6),th:nth-child(6){
+            border-left: 3px solid darkmagenta;
+            border-right: 3px solid darkmagenta;
         }
         tr:nth-child(1) th:nth-child(6){
             border-top: 3px solid darkmagenta;
-            border-left: 3px solid darkmagenta;
-            border-right: 3px solid darkmagenta;
-            border-bottom: 2px solid #f1c679;
         }
-        tr:nth-child(1) th:nth-child(3){
-           border-bottom: 1px solid #cef78f !important;
+        tr:nth-child(5) td:nth-child(6){
+            border-bottom: 3px solid darkmagenta;
         }
-        tr:nth-child(1) th:nth-child(5){
-            border-bottom: 2px solid #cef78f;
+        .top{
+            border-top: 2px solid grey;
+
         }
+        .bottom{
+            border-bottom: 2px solid grey;
+        }
+
     </style>
 </head>
 <body>
 
     <h1>School Time Table</h1>
-    <table  class="table2">
-        <colgroup>
-            <col span="1">
-            <col span="1">
-            <col span="1" style="background-color: #cef78f;">
-            <col span="1">
-            <col span="1" style="background-color: #cef78f;">
-        </colgroup>
+    <table>
         <tr>
             <td></td>
             <th>mon</th>
-            <th>tue</th>
+            <th class="top">tue</th>
             <th>wed</th>
-            <th>thu</th>
-            <th>fri</th>
+            <th class="top">thu</th>
+            <th >fri</th>
             <th>sat</th>
             <th>sun</th>
         </tr>
@@ -65,7 +71,7 @@
             <td></td>
             <td>German</td>
             <td></td>
-            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td>Dutch</td>
             <td></td>
             <td></td>
         </tr>
@@ -75,7 +81,7 @@
             <td>English</td>
             <td>German</td>
             <td></td>
-            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td>Dutch</td>
             <td></td>
             <td></td>
         </tr>
@@ -85,17 +91,17 @@
             <td>German</td>
             <td>German</td>
             <td></td>
-            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta;">Dutch</td>
+            <td>Dutch</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th>4th period</th>
             <td></td>
-            <td style="border-bottom: 2px solid grey;">English</td>
+            <td class="bottom">English</td>
             <td>English</td>
-            <td style="border-bottom: 2px solid grey;"></td>
-            <td style="border-left:3px solid darkmagenta; border-right: 3px solid darkmagenta; border-bottom: 3px solid darkmagenta;">Dutch</td>
+            <td class="bottom"></td>
+            <td>Dutch</td>
             <td></td>
             <td></td>
         </tr>
