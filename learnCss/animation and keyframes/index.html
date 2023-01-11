@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframes</title>
+    <style>
+        .container{
+            border: 2px solid brown;
+            background-color: antiquewhite;
+            height: 50vh;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border: 1px solid blue;
+            background-color: red;
+            /* animation: suraj; */
+            animation: moving-square;
+            animation-duration: 10s;
+            animation-iteration-count: 2;
+            /* animation-timing-function: ease-in-out; */
+        }
+
+        @keyframes moving-square {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            40%{
+                top: 0px;
+                left: 100%;
+                transform: translateX(-100%);
+            }
+            50%{
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%,-100%)
+            }
+            90%{
+                left: 0px;
+                top: 100%;
+                transform: translateY(-100%);
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes suraj {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
