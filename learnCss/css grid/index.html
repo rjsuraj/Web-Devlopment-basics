@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top{
+            background-color: black;
+            height: 200px;
+            display: grid;
+            grid-template-columns: 200px 200px;
+            column-gap: 100px;
+            grid-template-rows: 50px 80px;
+            justify-content: center;
+            align-content: center;
+        }
+        .x-player,.y-player{
+            color: white;
+            border: 1px solid grey;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.25rem;
+        }
+        .text{
+            color: white;
+            grid-column: 1 / span 2;
+            justify-self: center;
+            align-self: center;
+            font-size: 1.3rem;
+            font-family: monospace;
+        }
+        .middle-box{
+            background-color: aqua;
+            height: 65vh;
+            display: grid;
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: repeat(3,150px);
+            justify-content: center;
+            align-content: center;
+        }
+
+        .box{
+            border: 4px solid rgb(33, 164, 164);
+        }
+
+        #box-1,#box-2,#box-3{
+            border-top: none;
+        }
+        #box-7,#box-8,#box-9{
+            border-bottom: none;
+        }
+        #box-1,#box-4,#box-7{
+            border-left: none;
+        }
+        #box-3,#box-6,#box-9{
+            border-right: none;
+        }
+
+        footer{
+            background-color: black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="x-player">
+            <p>X</p>
+            <p>-</p>
+        </div>
+        <div class="y-player">
+            <p>O</p>
+            <p>-</p>
+        </div>
+
+        <div class="text">
+            <p>start game or select player</p>
+        </div>
+
+    </div>
+
+    <div class="middle-box">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+        <div class="box" id="box-4"></div>
+        <div class="box" id="box-5"></div>
+        <div class="box" id="box-6"></div>
+        <div class="box" id="box-7"></div>
+        <div class="box" id="box-8"></div>
+        <div class="box" id="box-9"></div>
+    </div>
+
+    <footer>
+        <button>Restart game</button>
+    </footer>
+
+</body>
+</html>
