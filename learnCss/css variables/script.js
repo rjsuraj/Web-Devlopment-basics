@@ -1,0 +1,12 @@
+document.getElementById('dark').addEventListener(
+    'click',()=>{
+        document.documentElement.style.setProperty
+        ('--background-color','#333')
+    }
+)
+document.getElementById('light').addEventListener(
+    'click',()=>{
+        document.documentElement.style.setProperty
+        ('--background-color','#fff')
+    }
+)

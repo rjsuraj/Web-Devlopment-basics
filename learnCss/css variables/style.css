@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --boxP : 10px;
+    --boxM : 20px;
+    --primary-color : aqua;
+    --secondary-color : red;
+}
+body{
+    background-color: var(--background-color,pink);
+}
+
+.container{
+    margin: var(--boxM);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.box{
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    padding: var(--boxP);
+    margin: var(--boxM);
+    width: 100px;
+    height: 100px;
+}
