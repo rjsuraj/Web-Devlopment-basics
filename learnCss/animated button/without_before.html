@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated button
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper{
+            min-height: 100vh;
+            background-color: bisque;
+        }
+
+        .hire-me-button{
+            position: relative;
+            background-color: red;
+            width: 140px;
+            height: 50px;
+            color: white;
+            font-size: large;
+            box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.805);
+            text-decoration: none;  
+            border: 1px solid black;
+        }
+        
+        .overlay{
+            background-color: black;
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition:width 0.5s;
+        }
+
+        .hire-me-button:hover .overlay{
+            width: 100%;
+        }
+
+        span{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper flex">
+        <a href="#" class="hire-me-button flex">
+            <span>Hire me</span>
+            <div class="overlay"></div>
+        </a>          
+    </div>
+</body>
+</html>

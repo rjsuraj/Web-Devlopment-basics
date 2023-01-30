@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using Pseudo elements | before</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            background-color: bisque;
+        }
+
+        .hire-me-button {
+            position: relative;
+            background-color: red;
+            /* width: 140px;
+            height: 50px; */
+            padding: 15px 40px;
+            color: white;
+            font-size: 20px;
+            box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.805);
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .hire-me-button::before {
+            content: '';
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            transition: transform 0.5s;
+        }
+
+        .hire-me-button:hover::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper flex">
+        <div class="hire-me-button flex">Hire me</div>
+    </div>
+</body>
+
+</html>
