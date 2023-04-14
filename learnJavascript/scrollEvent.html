@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll event</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        ul{
+            display: flex;
+            gap: 1rem;
+        }
+        li{
+            list-style: none;
+            padding-block: 50px;
+            padding-inline: 30px;
+        }
+        .extra{
+            height: 100vh;
+            background-color: blanchedalmond;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+     <div class="nav" id="nav">
+        <ul>
+            <li>Homw</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+     </div>
+
+     <div class="extra" id="extra">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi amet molestias? Debitis ratione ipsam vel tempore error blanditiis quo.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis saepe nihil sequi sapiente velit unde qui vitae quis nulla id, obcaecati praesentium facilis, architecto tempore perferendis? Nam fugit explicabo dolorem autem, nihil aut tempore, doloremque quo fugiat nostrum magni, sit nobis at atque corrupti. Quos fuga rem doloribus dolorem distinctio? Atque voluptates modi aspernatur officiis consectetur aut libero laborum, voluptas, odit perspiciatis dolor suscipit architecto deserunt quasi necessitatibus, voluptatibus delectus consequatur ab harum. Fugiat laboriosam exercitationem illo voluptatum, ad numquam doloremque ipsam delectus! Quas, quibusdam voluptatum. Accusamus, corporis. Impedit accusamus, cumque odio ab totam dignissimos sapiente rem et nemo. Blanditiis inventore incidunt placeat, corporis aspernatur dolorum. Illo iste aut voluptas, quis earum magni deleniti quibusdam ex minus et consequatur vel distinctio harum hic assumenda natus nulla quae quas? Similique fugit cum impedit accusantium error quis laboriosam culpa maxime, aut eos praesentium explicabo tempora neque sapiente perspiciatis necessitatibus ad dignissimos molestiae, aspernatur et voluptates dolorum architecto optio exercitationem? Autem similique rem eum porro, dolor ad voluptatum itaque magnam dolorum ea repudiandae sapiente cum sequi aliquid officia culpa consequuntur nihil quaerat. Earum eos placeat nostrum, quod minima, sequi porro, ipsam provident nam similique autem consequatur nisi saepe magni! Cupiditate veritatis illum vitae praesentium cumque ipsa in minus reprehenderit impedit maiores blanditiis dicta, necessitatibus fugiat tempora voluptate sint ab molestias velit iste incidunt et quidem voluptas! Tenetur reprehenderit delectus a distinctio eligendi libero, odit totam, nemo quam optio eveniet ea fuga aspernatur pariatur ipsam id laborum numquam dolore rerum error excepturi obcaecati exercitationem est. Ea, illum. Laboriosam voluptatem neque inventore laudantium temporibus numquam reiciendis similique? Nobis deleniti ipsa repudiandae saepe at dolor maxime quos ratione reiciendis aliquam similique tenetur, nihil doloribus. Blanditiis cumque eum, tempore sunt a odio ducimus recusandae optio fugit, aut qui consectetur velit molestias repellat saepe natus ad, sit deserunt?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum voluptatibus debitis aperiam impedit a molestias fugiat itaque delectus corrupti sapiente praesentium architecto quo aut, beatae et, totam maiores. Sequi ex ipsam nostrum voluptatibus. Quaerat, commodi! Officia quasi corrupti quaerat, exercitationem deserunt eveniet, quo aliquid nihil nisi assumenda non molestias repellendus iure quisquam sit necessitatibus fugiat ex laboriosam quod? Sit vero ex aspernatur sequi nostrum. Ab corrupti consequatur ipsum molestiae labore assumenda, et iure. Mollitia culpa, fugiat expedita quas et nesciunt ab labore laboriosam blanditiis. Tempore, natus in deserunt consequuntur dolor pariatur dignissimos minus ut assumenda dolore distinctio vitae, modi iure eaque deleniti nam quisquam beatae, fuga maiores quibusdam! Illum inventore neque aliquid nam, dolorem quisquam fugit, culpa ipsum temporibus ducimus eos cum? Quae molestias molestiae nulla illo iusto placeat sit corrupti, veniam iure aut animi aspernatur eum officiis commodi fuga amet inventore? Ut iusto officiis quos debitis quae consectetur temporibus veritatis nobis possimus non? Aut saepe reprehenderit quisquam corporis ut est, facilis earum quae enim dolorum quia eos neque officiis quos rem laudantium delectus iste vero expedita dicta eum ipsum? Voluptatem in, deserunt voluptatum laborum, dignissimos reiciendis dolorum sapiente laudantium ut explicabo labore dolorem est? Nobis tenetur repudiandae dolores!
+        </p>
+
+     </div>
+
+     <script>
+            const nav = document.getElementById("nav")
+            const extra = document.getElementById("extra")
+
+            document.addEventListener("scroll",()=>{
+                // console.log(window.scrollY)
+                // console.log("helo")
+                if(window.scrollY >= 100){
+                    nav.style.backgroundColor = "gray";
+                }
+                else{
+                    nav.style.backgroundColor = "black";
+                }
+            })
+     </script>
+     <script type="module" src="module.js"></script>
+     <script src="FragmentDoc.js"></script>
+</body>
+</html>
